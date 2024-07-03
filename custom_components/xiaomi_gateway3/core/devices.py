@@ -2095,6 +2095,8 @@ DEVICES += [{
         ConstConv("action", mi="16.e.3", value=BUTTON_3_HOLD),
     ],
 }, {
+    # LeMesh generic. Pro models has 4 dedicated scene buttons, wireless switch mode has no effect
+    14460: ["LeMesh", "Scene Mesh four key Switch Pro", "lemesh.switch.sw4f01"],
     12458: ["Yeelight", "K Series 4-Key Wall Switch", "YLYKG-0028/0023", "yeelink.switch.ylsw7"],
     "spec": [
         BaseConv("channel_1", "switch", mi="2.p.1"),
@@ -2122,7 +2124,7 @@ DEVICES += [{
         ConstConv("action", mi="16.e.2", value=BUTTON_2_DOUBLE),
         ConstConv("action", mi="16.e.3", value=BUTTON_3_HOLD),
         ConstConv("action", mi="17.e.1", value=BUTTON_4_SINGLE),
-        ConstConv("action", mi="17.e.2", value="button_4_double"),
+        ConstConv("action", mi="17.e.2", value=BUTTON_4_DOUBLE),
         ConstConv("action", mi="17.e.3", value=BUTTON_4_HOLD),
     ],
 }, {
